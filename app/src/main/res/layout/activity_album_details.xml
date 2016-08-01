@@ -108,7 +108,8 @@
             <TextView
                 android:id="@+id/textView_biography"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/textview_biography_margin"/>
 
         </android.support.v7.widget.CardView>
 

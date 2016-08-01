@@ -1,6 +1,7 @@
 package com.droidsonroids.materialmusicfacts.screens.screen_main;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
@@ -106,6 +107,7 @@ public class MainActivity extends SuperActivity implements AppBarLayout.OnOffset
 
     @Override
     public void onAlbumClickedListener(View imageViewAlbum, int position) {
-        startActivity(new Intent(this, AlbumDetailsActivity.class));
+        ActivityOptions optionsCompact = ActivityOptions.makeSceneTransitionAnimation(this);
+        startActivity(new Intent(this, AlbumDetailsActivity.class), optionsCompact.toBundle());
     }
 }

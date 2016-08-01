@@ -16,4 +16,8 @@
         <item name="android:windowTranslucentStatus">true</item>
     </style>
 
+    <style name="AlbumActivityTheme" parent="AppTheme">
+        <item name="android:windowEnterTransition">@android:transition/slide_bottom</item>
+    </style>
+
 </resources>

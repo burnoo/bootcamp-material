@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="together">
+
+    <changeBounds
+        android:duration="300">
+        <targets>
+            <target android:targetId="@id/textView_biography" />
+        </targets>
+    </changeBounds>
+    <changeImageTransform/>
+    <slide
+        android:slideEdge="bottom"
+        android:startDelay="300">
+        <targets>
+            <target android:targetId="@id/textView_biography" />
+        </targets>
+    </slide>
+
+</transitionSet>

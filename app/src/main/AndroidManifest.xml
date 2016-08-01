@@ -27,7 +27,8 @@
 
         <activity
             android:name=".screens.screen_album_details.AlbumDetailsActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AlbumActivityTheme"/>
 
     </application>
 
