@@ -77,6 +77,26 @@ public class MadonnaProvider {
         return mMadonna.getBio();
     }
 
+    public String provideName()
+    {
+        return mMadonna.getName();
+    }
+
+    public String provideSurname()
+    {
+        return mMadonna.getSurname();
+    }
+
+    public String providePlace()
+    {
+        return mMadonna.getPlaceOfBirth();
+    }
+
+    public String provideNickname()
+    {
+        return mMadonna.getNickname();
+    }
+
     public @DrawableRes int provideAlbumCoverByPosition(int position) {
         return prepareDrawableId(mMadonna.getAlbums().get(position));
     }

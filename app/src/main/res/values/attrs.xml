@@ -5,4 +5,11 @@
         <attr name="subtitle" format="string" />
         <attr name="backgroundDrawable" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="HidingFab">
+        <attr name="hideStyle" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
 </resources>

@@ -23,4 +23,9 @@
     <dimen name="textsize_cardview_subtitle">12sp</dimen>
     <dimen name="textsize_cardview_text">14sp</dimen>
 
+    <dimen name="main_activity_ctl_margin_start">48dp</dimen>
+    <dimen name="main_activity_details_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="cardview_margin">16dp</dimen>
+    <dimen name="cardview_overlapTop">40dp</dimen>
 </resources>
