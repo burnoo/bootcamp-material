@@ -6,15 +6,20 @@
     <changeBounds
         android:duration="300">
         <targets>
-            <target android:targetId="@id/textView_biography" />
+            <target android:targetId="@id/imageview_album"/>
         </targets>
     </changeBounds>
-    <changeImageTransform/>
+    <changeImageTransform
+        android:duration="300">
+        <targets>
+            <target android:targetId="@id/imageview_album"/>
+        </targets>
+    </changeImageTransform>
     <slide
         android:slideEdge="bottom"
         android:startDelay="300">
         <targets>
-            <target android:targetId="@id/textView_biography" />
+            <target android:targetId="@id/cardview_biography" />
         </targets>
     </slide>
 

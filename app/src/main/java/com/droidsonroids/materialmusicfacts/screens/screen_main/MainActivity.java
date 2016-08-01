@@ -8,6 +8,7 @@ import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Pair;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.TextView;
@@ -54,7 +55,6 @@ public class MainActivity extends SuperActivity implements AppBarLayout.OnOffset
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setUpView();
-        initRecyclerView();
     }
 
     private void setUpView() {
@@ -63,6 +63,7 @@ public class MainActivity extends SuperActivity implements AppBarLayout.OnOffset
         mTextViewPlace.setText(App.getMadonnaProvider().providePlace());
         mTextViewNickname.setText(App.getMadonnaProvider().provideNickname());
         mAppBarLayout.addOnOffsetChangedListener(this);
+        initRecyclerView();
     }
 
     private void initRecyclerView() {
@@ -107,7 +108,9 @@ public class MainActivity extends SuperActivity implements AppBarLayout.OnOffset
 
     @Override
     public void onAlbumClickedListener(View imageViewAlbum, int position) {
-        ActivityOptions optionsCompact = ActivityOptions.makeSceneTransitionAnimation(this);
-        startActivity(new Intent(this, AlbumDetailsActivity.class), optionsCompact.toBundle());
+        ActivityOptions optionsCompact = ActivityOptions.makeSceneTransitionAnimation(this, new Pair<>(imageViewAlbum, "transitionAlbum"));
+        Intent intent = new Intent(this, AlbumDetailsActivity.class);
+        intent.putExtra(AlbumDetailsActivity.EXTRA_ALBUM_COVER, position);
+        startActivity(intent, optionsCompact.toBundle());
     }
 }

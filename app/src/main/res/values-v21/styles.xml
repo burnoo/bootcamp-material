@@ -17,7 +17,7 @@
     </style>
 
     <style name="AlbumActivityTheme" parent="AppTheme">
-        <item name="android:windowEnterTransition">@android:transition/slide_bottom</item>
+        <item name="android:windowEnterTransition">@transition/activity_album_details_enter_transition</item>
     </style>
 
 </resources>
